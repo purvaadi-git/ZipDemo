@@ -41,16 +41,6 @@ class ViewController: UIViewController, PDFViewDelegate {
                             print("No File")
                         }
                         
-                        if FileManager.default.fileExists(atPath: destinationUrl.appendingPathComponent("pdf/Affidavit.pdf").path)
-                        {
-                            print("FILE IS there at \n\(destinationUrl.appendingPathComponent("pdf/Affidavit.pdf").path)!)\n")
-                            self.PDFPath = destinationUrl.appendingPathComponent("pdf/Affidavit.pdf").path
-                            
-                        }else
-                        {
-                            print("No File")
-                        }
-                        
                     }
                     print("UNZIPED Directory: ", destinationUrl)
                     
